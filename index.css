@@ -488,9 +488,13 @@ h4 {
   padding-bottom: 96px;
 }
 .slider-inner {
+  width: 100%;
   position: relative;
   transition: all 0.3s;
-  width: 100%;
+}
+.slider-inner__container {
+  overflow: hidden;
+  padding: 10px;
 }
 .slider-inner__buttons {
   display: flex;
