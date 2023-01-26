@@ -340,7 +340,7 @@ h4 {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   padding: 25px 37px 20px;
-  height: 490px;
+  min-height: 490px;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -395,17 +395,51 @@ h4 {
 }
 .popular-card__title,
 .slider-card__title {
-  padding-bottom: 17px;
-  border-bottom: 1px solid #e2e2e2;
   width: 284px;
   flex-grow: 1;
   display: flex;
   align-items: center;
-  height: 63px;
+}
+.popular-card__dots {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 17px;
+}
+.popular-card__dot {
+  border-radius: 2px;
+  width: 82px;
+  height: 5px;
+  border: 1px solid var(--blue);
+}
+.popular-card__dot:hover,
+.active {
+  background-color: var(--blue);
+}
+.popular-card__colours {
+  display: flex;
+  gap: 13px;
+  padding-bottom: 17px;
+}
+.popular-card__colour {
+  width: 28px;
+  height: 28px;
+  border-radius: 2px;
+  margin-top: 30px;
+}
+.popular-card__colour:nth-child(1) {
+  background-color: #2d2d2d;
+}
+.popular-card__colour:nth-child(2) {
+  background-color: #4D511D;
+}
+.popular-card__colour:nth-child(3) {
+  background-color: #F3E7C6;
 }
 .popular-card__price,
 .slider-card__price {
   padding: 12px 0 15px;
+  border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
   font-size: 25px;
   line-height: 32px;
