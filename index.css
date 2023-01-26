@@ -369,7 +369,29 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(-20%, -30%);
+  transform: translateY(-4px);
+}
+.label-hit {
+  transform: translateY(24px);
+}
+.sales {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -36px;
+  left: -20px;
+}
+.label {
+  position: relative;
+}
+.label-text {
+  color: var(--white);
+  top: 27px;
+  left: 22px;
+  position: absolute;
+}
+.hidden {
+  display: none;
 }
 .popular-card__title,
 .slider-card__title {
@@ -530,6 +552,17 @@ h4 {
 .slider-inner__items {
   display: flex;
   gap: 30px;
+}
+.slider-sale {
+  position: absolute;
+  top: -38px;
+  left: -16px;
+}
+.slider-label {
+  position: relative;
+}
+.slider-label__text {
+  position: absolute;
 }
 .designs {
   padding-bottom: 55px;
