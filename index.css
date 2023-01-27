@@ -124,7 +124,7 @@ body {
   margin-bottom: 10px;
   transition: color 0.3s;
 }
-.phone__link:hover  {
+.phone__link:hover {
   color: var(--red);
 }
 .phone__link:hover svg path {
@@ -159,8 +159,8 @@ body {
   display: block;
   margin: 0 auto;
 }
-.buttons__item svg *{
-  transition: all .3s;
+.buttons__item svg * {
+  transition: all 0.3s;
 }
 .buttons__item:hover svg * {
   fill: var(--red);
@@ -301,14 +301,21 @@ h4 {
 .catalogue-inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 -15px -30px;
 }
 .catalogue-inner__item {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 39px;
+  margin: 0 15px 30px;
+  width: calc(25% - 30px);
+  height: 238px;
   transition: opacity 0.3s;
+}
+.catalogue-inner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .catalogue-inner__item span {
   position: absolute;
@@ -317,7 +324,7 @@ h4 {
   color: var(--white);
   z-index: 20;
   padding: 8px 16px;
-  bottom: 6px;
+  bottom: 0;
   left: 0;
 }
 .catalogue-inner__item:hover {
@@ -337,12 +344,12 @@ h4 {
 .popular-inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 -15px -30px;
 }
 .popular-inner__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin: 0 15px 30px;
 }
 .popular-card,
 .slider-card {
@@ -353,6 +360,7 @@ h4 {
   min-height: 490px;
   cursor: pointer;
   transition: all 0.3s;
+  width: calc(25% - 30px);
 }
 .popular-card:hover,
 .slider-card:hover {
@@ -363,6 +371,14 @@ h4 {
 .slider-card__image {
   margin-bottom: 8px;
   position: relative;
+  width: 100%;
+  height: 214px;
+  object-fit: cover;
+}
+.popular-card__img,
+.slider-card__img {
+  width: 100%;
+  height: 100%;
 }
 .popular-card__image span,
 .slider-card__image span {
@@ -441,10 +457,10 @@ h4 {
   background-color: #2d2d2d;
 }
 .popular-card__colour:nth-child(2) {
-  background-color: #4D511D;
+  background-color: #4d511d;
 }
 .popular-card__colour:nth-child(3) {
-  background-color: #F3E7C6;
+  background-color: #f3e7c6;
 }
 .popular-card__price,
 .slider-card__price {
@@ -523,6 +539,7 @@ h4 {
   width: 100%;
   padding: 26px 0 29px;
   transition: background-color 0.3s;
+  margin-top: 37px;
 }
 .popular-showmore__btn:hover {
   background-color: #c4c4c4;
