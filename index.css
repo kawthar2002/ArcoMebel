@@ -366,7 +366,17 @@ h4 {
 .slider-card:hover {
   box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  min-height: max-content;
+  margin-bottom: -100px;
+  z-index: 20;
+  transition: all .3s;
 }
+.popular-card:hover .popular-card__size,
+.popular-card:hover .popular-card__colours,
+.popular-card:hover .popular-card__dots {
+  display: flex;
+}
+
 .popular-card__image,
 .slider-card__image {
   margin-bottom: 8px;
@@ -431,6 +441,7 @@ h4 {
   width: 100%;
   justify-content: space-between;
   padding-bottom: 17px;
+  display: none;
 }
 .popular-card__dot {
   border-radius: 2px;
@@ -446,6 +457,7 @@ h4 {
   display: flex;
   gap: 13px;
   padding-bottom: 17px;
+  display: none;
 }
 .popular-card__colour {
   width: 28px;
@@ -544,6 +556,22 @@ h4 {
 .popular-showmore__btn:hover {
   background-color: #c4c4c4;
 }
+.popular-card__size {
+  margin-top: 27px;
+  display: none;
+}
+.popular-card__size-list {
+  display: flex;
+  gap: 12px;
+}
+.popular-card__size-item {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--dark);
+}
+.popular-card__size-item span {
+  display: block;
+}
 .categories {
   padding: 0 98px 76px 0;
 }
@@ -603,8 +631,9 @@ h4 {
   left: -40px;
 }
 .right {
-  right: -40px;
+  right: 0;
   transform: rotate(180deg);
+  z-index: 30;
 }
 .right:hover svg path,
 .left:hover svg path {
