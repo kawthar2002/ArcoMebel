@@ -359,24 +359,28 @@ h4 {
   padding: 25px 37px 20px;
   min-height: 490px;
   cursor: pointer;
-  transition: all 0.3s;
   width: calc(25% - 30px);
+  display: flex;
+  
 }
 .popular-card:hover,
 .slider-card:hover {
   box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   min-height: max-content;
-  margin-bottom: -100px;
   z-index: 20;
-  transition: all .3s;
+}
+.popular-card:hover {
+  margin-bottom: -100px;
 }
 .popular-card:hover .popular-card__size,
 .popular-card:hover .popular-card__colours,
-.popular-card:hover .popular-card__dots {
+.popular-card:hover div.swiper-pagination  {
   display: flex;
 }
-
+.popular-card__slider-img {
+  display: none;
+}
 .popular-card__image,
 .slider-card__image {
   margin-bottom: 8px;
@@ -390,8 +394,7 @@ h4 {
   width: 100%;
   height: 100%;
 }
-.popular-card__image span,
-.slider-card__image span {
+.label-text {
   position: absolute;
   color: var(--white);
 }
@@ -409,6 +412,7 @@ h4 {
 }
 .label-hit {
   transform: translateY(24px);
+  color: var(--white);
 }
 .sales {
   display: flex;
@@ -416,6 +420,7 @@ h4 {
   position: absolute;
   top: -36px;
   left: -20px;
+  z-index: 10;
 }
 .label {
   position: relative;
@@ -429,29 +434,41 @@ h4 {
 .hidden {
   display: none;
 }
+.displayed {
+  display: block;
+}
 .popular-card__title,
 .slider-card__title {
-  width: 284px;
+  width: 100%;
   flex-grow: 1;
   display: flex;
   align-items: center;
+  height: 70px;
+  margin: 12px 0;
 }
-.popular-card__dots {
+div.swiper-pagination {
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding-bottom: 17px;
+  bottom: 0;
+  position: static;
+  margin-top: 10px;
   display: none;
 }
-.popular-card__dot {
+span.swiper-pagination-bullet {
   border-radius: 2px;
   width: 82px;
   height: 5px;
   border: 1px solid var(--blue);
 }
-.popular-card__dot:hover,
+
+.swiper-pagination-bullet:hover,
 .active {
   background-color: var(--blue);
+}
+.slider-card__image span {
+  position:static;
 }
 .popular-card__colours {
   display: flex;
@@ -463,7 +480,6 @@ h4 {
   width: 28px;
   height: 28px;
   border-radius: 2px;
-  margin-top: 30px;
 }
 .popular-card__colour:nth-child(1) {
   background-color: #2d2d2d;
@@ -579,7 +595,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   gap: 34px;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   justify-content: flex-start;
 }
 .categories__link {
