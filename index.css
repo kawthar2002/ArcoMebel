@@ -361,7 +361,10 @@ h4 {
   cursor: pointer;
   width: calc(25% - 30px);
   display: flex;
-  
+  flex-direction: column;
+}
+.slider-card {
+  max-width: 358px;
 }
 .popular-card:hover,
 .slider-card:hover {
@@ -375,7 +378,7 @@ h4 {
 }
 .popular-card:hover .popular-card__size,
 .popular-card:hover .popular-card__colours,
-.popular-card:hover div.swiper-pagination  {
+.popular-card:hover div.swiper-pagination {
   display: flex;
 }
 .popular-card__slider-img {
@@ -409,10 +412,10 @@ h4 {
   justify-content: center;
   align-items: center;
   transform: translateY(-4px);
+  color: var(--white);
 }
 .label-hit {
   transform: translateY(24px);
-  color: var(--white);
 }
 .sales {
   display: flex;
@@ -466,9 +469,6 @@ span.swiper-pagination-bullet {
 .swiper-pagination-bullet:hover,
 .active {
   background-color: var(--blue);
-}
-.slider-card__image span {
-  position:static;
 }
 .popular-card__colours {
   display: flex;
@@ -604,7 +604,9 @@ span.swiper-pagination-bullet {
   color: var(--blue);
   height: 45px;
   padding: 10px 30px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s;
 }
 .categories__link:hover {
@@ -644,10 +646,11 @@ span.swiper-pagination-bullet {
   transition: fill 0.3s;
 }
 .left {
-  left: -40px;
+  left: -25px;
+  z-index: 10;
 }
 .right {
-  right: 0;
+  right: -25px;
   transform: rotate(180deg);
   z-index: 30;
 }
