@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <title>ArcoMebel</title>
   </head>
   <body>
@@ -426,7 +430,7 @@
           <section class="popular">
             <div class="inner-top">
               <div class="title">ПОПУЛЯРНЫЕ ТОВАРЫ</div>
-              <span>Все товары</span>
+              <a href="#!">Все товары</a>
             </div>
             <div class="popular-inner">
               <div class="popular-inner__item popular-card">
@@ -1301,7 +1305,7 @@
           <section class="slider">
             <div class="title">ТОВАРЫ ПО АКЦИИ</div>
             <div class="slider-inner">
-              <div class="slider-inner__container ">
+              <div class="slider-inner__container">
                 <div class="slider-inner__items swiper-wrapper">
                   <div class="slider-inner__item slider-card swiper-slide">
                     <div class="slider-card__image">
@@ -1341,6 +1345,9 @@
                     <div class="slider-card__button">
                       <button class="slider-card__btn">КУПИТЬ</button>
                       <a href="#!" class="slider-card__favorites">
+                        <div class="favourites__text">
+                          <p>Добавить в избранное</p>
+                        </div>
                         <svg
                           width="34"
                           height="29"
@@ -1395,6 +1402,9 @@
                     <div class="slider-card__button">
                       <button class="slider-card__btn">КУПИТЬ</button>
                       <a href="#!" class="slider-card__favorites">
+                        <div class="favourites__text">
+                          <p>Добавить в избранное</p>
+                        </div>
                         <svg
                           width="34"
                           height="29"
@@ -1448,6 +1458,9 @@
                     <div class="slider-card__button">
                       <button class="slider-card__btn">КУПИТЬ</button>
                       <a href="#!" class="slider-card__favorites">
+                        <div class="favourites__text">
+                          <p>Добавить в избранное</p>
+                        </div>
                         <svg
                           width="34"
                           height="29"
@@ -1501,6 +1514,9 @@
                     <div class="slider-card__button">
                       <button class="slider-card__btn">КУПИТЬ</button>
                       <a href="#!" class="slider-card__favorites">
+                        <div class="favourites__text">
+                          <p>Добавить в избранное</p>
+                        </div>
                         <svg
                           width="34"
                           height="29"
@@ -1553,7 +1569,10 @@
                     </p>
                     <div class="slider-card__button">
                       <button class="slider-card__btn">КУПИТЬ</button>
-                      <a href="#!" class="slider-card__favorites">
+                      <a href="#!" class="slider-card__link">
+                        <div class="favourites__text">
+                          <p>Добавить в избранное</p>
+                        </div>
                         <svg
                           width="34"
                           height="29"
@@ -1600,38 +1619,43 @@
                 </div>
               </div>
             </div>
-          </section> 
+          </section>
           <section class="designs">
             <div class="inner-top">
               <div class="title">НАШИ РАБОТЫ</div>
-              <span>Смотреть все работы</span>
+              <a href="#!">Смотреть все работы</a>
             </div>
             <div class="design-inner">
               <div class="design-inner__block">
                 <div class="design-inner__block-item">
-                  <img
+                  <a href="./img/designs/des-1.jpg" class="design-inner__link--small" data-fancybox="gallery" data-caption="Caption #1"><img
                     class="item-1"
                     src="./img/designs/des-1.jpg"
                     alt="design"
-                  />
-                  <img
+                  /></a>
+                  <a href="./img/designs/des-2.jpg" class="design-inner__link--small" data-fancybox="gallery" data-caption="Caption #2"><img
                     class="item-2"
                     src="./img/designs/des-2.jpg"
                     alt="design"
-                  />
+                  /></a>
                 </div>
+                <a href="./img/designs/des-3.jpg" class="design-inner__link--low" data-fancybox="gallery" data-caption="Caption #3">  
                 <img
                   class="item-3"
                   src="./img/designs/des-3.jpg"
                   alt="design"
                 />
+                </a>
               </div>
+              <a href="/img/designs/des-4.jpg" class="design-inner__link--tall" data-fancybox="gallery" data-caption="Caption #4">  
               <img class="item-4" src="./img/designs/des-4.jpg" alt="design" />
+              </a>
             </div>
           </section>
         </div>
       </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>

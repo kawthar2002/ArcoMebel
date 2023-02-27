@@ -12,3 +12,7 @@ const slider = new Swiper('.slider-inner__container', {
     prevEl: '.left',
   },
 });
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+ 
+});
