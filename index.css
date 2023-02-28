@@ -706,7 +706,7 @@ span.swiper-pagination-bullet {
 .design-inner__block {
   display: flex;
   flex-direction: column;
- gap: 28px;
+  gap: 28px;
 }
 .design-inner__link--small {
   width: 488px;
@@ -716,7 +716,7 @@ span.swiper-pagination-bullet {
   height: 430px;
 }
 .design-inner__link--tall {
-  width: 408px;
+  width: 502px;
 }
 .item-1,
 .item-2,
@@ -726,6 +726,155 @@ span.swiper-pagination-bullet {
   height: 100%;
   object-fit: cover;
 }
+.map {
+  background: url('./img/blue-room.jpg') no-repeat top left,
+    url('./img/map.png') no-repeat top right;
+  height: 488px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-bottom: 34px;
+}
+.map__title {
+  margin-bottom: 82px;
+}
+.map__inner {
+  background: rgba(243, 231, 198, 0.6);
+  width: 712px;
+  height: 488px;
+}
+.map__form {
+  padding: 52px;
+}
+form p {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  color: var(--dark);
+}
+form p + P {
+  margin-top: 32px;
+}
+form button {
+  margin-top: 58px;
+  width: 259px;
+  height: 58px;
+  padding: 13px 36px;
+  background-color: var(--blue);
+  border: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+.instagram {
+  padding: 70px;
+}
+.instagram__img {
+  transition: opacity 0.3s ease;
+}
+.instagram__img:hover {
+  opacity: 0.8;
+}
+.instagram__img img {
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  background-color: var(--blue);
+  padding: 40px 10px 44px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info {
+  color: var(--white);
+}
+.footer-info__logo {
+  position: relative;
+  margin-bottom: 36px;
+}
+.footer-info__logo img {
+  z-index: 10;
+  position: relative;
+}
+.footer-info__logo::before {
+  content: '';
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background-color: #ffd60a;
+  top: -2px;
+  left: -8px;
+  border-radius: 50%;
+}
+.footer-info__phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  display: block;
+}
+.footer-info__phone:hover {
+  text-decoration: underline;
+}
+.footer-info__block {
+  margin-bottom: 62px;
+}
+.footer-info__block td + td {
+  padding-left: 26px;
+}
+td{
+  padding-bottom: 10px;
+}
+td:nth-child(2) {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+.footer-info__socials {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+}
+.footer__rights {
+  font-size: 20px;
+  line-height: 26px;
+  color: #dbdbdb;
+  margin-top: 62px;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer-list__item-title a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--white);
+}
+.footer-list__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--white);
+}
+
 @media (max-width: 1200px) {
   .header-top__list {
     gap: 20px;
